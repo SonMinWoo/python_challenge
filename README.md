@@ -22,3 +22,10 @@ nomad coder python challenge!
   
     1. 직접 function에서 새로운 list를 만들어 argument list의 값을 집어넣기
     2. import copy를 한 후 copy.deepcopy를 통해 argument list를 새로운 list에 깊은 복사
+
+## day 3
+1. if, elif, else를 이용한 조건문 생성(indentation으로 내용이 구성됨)
+2. Function(arg1 = "abc", arg2=None) 등으로 기본 값을 주어 오류 방지 가능
+3. type(arg1) == int(,str,float 등) 으로 인자 type check 
+4. 단, None은 if(arg1 == None) 등으로 check해야함 (none은 type()함수 쓰지 않아도 됨)
+5. print(f"abcd{arg1}") 과 같은 형태로 변수 출력하면 편하다.
