@@ -29,3 +29,10 @@ nomad coder python challenge!
 3. type(arg1) == int(,str,float 등) 으로 인자 type check 
 4. 단, None은 if(arg1 == None) 등으로 check해야함 (none은 type()함수 쓰지 않아도 됨)
 5. print(f"abcd{arg1}") 과 같은 형태로 변수 출력하면 편하다.
+
+## day 4
+1. for를 통한 loop (for variable in list/tuple/stirng...)
+2. import로 module 전체 import, from module import function으로 부분 import
+3. from module import function as nickname으로 이름 붙여주기
+4. requests를 import하고 requests.get(url)을 변수에 담으면 status code 출력됨
+5. 4번에서 담은 변수에 .text를 통해 html 코드 전체를 볼 수 있음
