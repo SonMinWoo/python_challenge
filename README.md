@@ -36,3 +36,8 @@ nomad coder python challenge!
 3. from module import function as nickname으로 이름 붙여주기
 4. requests를 import하고 requests.get(url)을 변수에 담으면 status code 출력됨
 5. 4번에서 담은 변수에 .text를 통해 html 코드 전체를 볼 수 있음
+
+## day 5
+1. bs4를 이용한 html 파싱 (requests.get(URL),  BeautifulSoup(result.text, "html.parser"), result.find("div", {"class":"pagination"})) ...
+2. .find_all('a')로 특정 class에 속한 모든 link를 다 받아올 수 있음
+3. link를 이동하면서 URL에 나타나는 query의 특징을 보고 requests.get(f"{URL}&start={page*LIMIT}")과 같이 해당 page가 존재하는지 check
