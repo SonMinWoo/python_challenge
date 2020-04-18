@@ -41,3 +41,9 @@ nomad coder python challenge!
 1. bs4를 이용한 html 파싱 (requests.get(URL),  BeautifulSoup(result.text, "html.parser"), result.find("div", {"class":"pagination"})) ...
 2. .find_all('a')로 특정 class에 속한 모든 link를 다 받아올 수 있음
 3. link를 이동하면서 URL에 나타나는 query의 특징을 보고 requests.get(f"{URL}&start={page*LIMIT}")과 같이 해당 page가 존재하는지 check
+
+## day 6
+1. x = html.find("div", {"class":"recJobLoc"})는 해당 class의 div를 찾아 x에 할당해주는 것과 같음(bs4를 사용 가능!)
+2. bs4에서 find는 맨 앞의 하나만, find_all은 모두 찾아 리스트화
+3. ["data-rc-loc"]와 같은 지시자는 해당 html 객체에서 data-rc-loc과 같은 속성값을 가진 값을 반환하라는 것
+4. company.string같이 .string으로 객체 내부의 값을 얻을 수 있음 
