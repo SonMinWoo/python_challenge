@@ -47,3 +47,11 @@ nomad coder python challenge!
 2. bs4에서 find는 맨 앞의 하나만, find_all은 모두 찾아 리스트화
 3. ["data-rc-loc"]와 같은 지시자는 해당 html 객체에서 data-rc-loc과 같은 속성값을 가진 값을 반환하라는 것
 4. company.string같이 .string으로 객체 내부의 값을 얻을 수 있음 
+
+## day 8
+1. csv 포맷으로 저장하기
+2. file = open("jobs.csv", mode="w")과 같이 파일 생성. mode에서 "w"옵션은 '파일 새로 쓰기'를 뜻함(초기화)
+3. writer = csv.writer(file)로 위 파일에 쓰는 writer 생성
+4. writer.writerow(["title", "company", "location", "link"])와 같이 row 단위로 파일에 쓴다.
+5. writer.writerow(list(job.values()))와 같이 dictionary 내부 값을 쓸 수 있다. 단, list형식으로 writerow에 값을 줘야 한다.
+6. 위에서 Dictionary의 value들은 dictionary.values()와 같이 얻을 수 있다.
