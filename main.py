@@ -1,6 +1,6 @@
 # Extracting from page
 from day5_6_indeed import get_jobs as get_indeed_jobs
-from day6_stackoverflow import get_jobs as get_so_jobs
+from day9_stackoverflow import get_jobs as get_so_jobs
 from day8 import save_to_file
 
 

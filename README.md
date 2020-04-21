@@ -55,3 +55,14 @@ nomad coder python challenge!
 4. writer.writerow(["title", "company", "location", "link"])와 같이 row 단위로 파일에 쓴다.
 5. writer.writerow(list(job.values()))와 같이 dictionary 내부 값을 쓸 수 있다. 단, list형식으로 writerow에 값을 줘야 한다.
 6. 위에서 Dictionary의 value들은 dictionary.values()와 같이 얻을 수 있다.
+
+## day 9
+1. 크롤링 중 get_text()로 조건을 추가할 수 있다.(기존 .string보다 명료한듯) ex) get_text(strip=True)
+2. find_all("a",recursive=False)로 계속해서 해당하는 tag들을 찾아 내려가는 것을 방지할 수 있다.
+3. .strip("-"), .strip("\n") .strip(" \r") 등으로 불필요한 문자들 제거 가능
+4. app = Flask("AppName")과 같이 정의해 flask 객체를 생성하고 app.run()으로 flask 서버 실행
+5. @app.route("/")밑에 바로 def funcName(): return "hello"라고 적는 것으로 경로 설정 가능 (@반드시 app.route밑에 function이 와서 해당 경로를 처리해줘야됨)
+6. return render_template("index.html")과 같이 templates 파일 내 html파일 보여주기 가능(flask는 무조건 templates 내로 경로를 잡음))
+7. render_template("report.html", searchingBy=word)와 같이 python 변수를 html에 제공할 수 있음
+8. html파일에선 {{variable}}로 위에서 받은 변수 사용 가능
+9. {% for a in list %}와 같이 python 명령어 실행 가능 단, {% endfor %}과 같이 종료 명시해줘야됨
