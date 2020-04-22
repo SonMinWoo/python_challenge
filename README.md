@@ -65,4 +65,9 @@ nomad coder python challenge!
 6. return render_template("index.html")과 같이 templates 파일 내 html파일 보여주기 가능(flask는 무조건 templates 내로 경로를 잡음))
 7. render_template("report.html", searchingBy=word)와 같이 python 변수를 html에 제공할 수 있음
 8. html파일에선 {{variable}}로 위에서 받은 변수 사용 가능
-9. {% for a in list %}와 같이 python 명령어 실행 가능 단, {% endfor %}과 같이 종료 명시해줘야됨
+9. {% for a in list %}와 같이 python 명령어 실행 가능. 단, {% endfor %}과 같이 종료 명시해줘야됨
+
+## day 10
+1. {% if var == "abc"%}와 같이 if문도 사용 가능. 단, {% endif %}로 종료해줘야하며, 'is' 가 아닌 ==로 써야 문자열 비교가 먹히는 듯하다.
+2. request에는 기본적으로 json 파싱 함수가 있어 requests.get(url).json()으로 Python dictionary화가 가능하다.
+3. 입력에 의한 취약점을 막기 위해 {{var|safe}}라는 |safe 필터가 존재한다.
