@@ -71,3 +71,9 @@ nomad coder python challenge!
 1. {% if var == "abc"%}와 같이 if문도 사용 가능. 단, {% endif %}로 종료해줘야하며, 'is' 가 아닌 ==로 써야 문자열 비교가 먹히는 듯하다.
 2. request에는 기본적으로 json 파싱 함수가 있어 requests.get(url).json()으로 Python dictionary화가 가능하다.
 3. 입력에 의한 취약점을 막기 위해 {{var|safe}}라는 |safe 필터가 존재한다.
+
+## day 11
+1. python dictionary list value 기준 sort : sorted(list명, key=lambda (list 내부 item들의 임시 이름): ((list 내부 item들의 임시 이름)["정렬하고자 하는 dictionary의 key"]), reverse=True(default는 오름차순, reverse=True는 내림차순 정렬))
+2. flask request : request.args.to_dict()으로 받은 parameter들을 dict화 시킬 수 있다.
+3. dict에서 dict.key()로 dict의 key list를 받을 수 있다.
+4. requests에서 header를 추가하여(requests.get(url, headers=header명)) scrapping 차단 사이트를 우회할 수 있다. (ex : reddit -> headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.47 Safari/537.36'} 추가)
