@@ -77,3 +77,8 @@ nomad coder python challenge!
 2. flask request : request.args.to_dict()으로 받은 parameter들을 dict화 시킬 수 있다.
 3. dict에서 dict.key()로 dict의 key list를 받을 수 있다.
 4. requests에서 header를 추가하여(requests.get(url, headers=header명)) scrapping 차단 사이트를 우회할 수 있다. (ex : reddit -> headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.47 Safari/537.36'} 추가)
+
+## day 12
+1. @app.route("/add", methods=["post"])와 같이 methods=[]에 request 방식을 지정해 줄 수 있다. (default는 get)
+2. request.form["input name"]으로 form 내 input 값들을 받아올 수 있다.
+3. flask 패키지 내의 redirect를 import 한 후 redirect("url")로 사용할 수 있다.
