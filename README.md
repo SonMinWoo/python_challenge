@@ -82,3 +82,8 @@ nomad coder python challenge!
 1. @app.route("/add", methods=["post"])와 같이 methods=[]에 request 방식을 지정해 줄 수 있다. (default는 get)
 2. request.form["input name"]으로 form 내 input 값들을 받아올 수 있다.
 3. flask 패키지 내의 redirect를 import 한 후 redirect("url")로 사용할 수 있다.
+
+## day 13
+1. send_file(filename)을 통해 현재 directory의 파일을 내려받을 수 있게 할 수 있다.
+2. url router에서 page를 제공하지 않아도 기능만 수행하게 할 수 있다.
+3. raise Exception()을 통해 try문 내에서 조건이 충족되지 않았을 시 exception 시킬 수 있다.
